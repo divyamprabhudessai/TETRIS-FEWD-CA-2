@@ -15,24 +15,40 @@
     overflow: hidden;
 }
 
+
+
 .column1{
-        background-color:#E1E6AC;
+        background-color:#2E3233;
         display: flex;
         justify-content: center;
         align-items: center;
+       
 }
 
 .column2{
-    background-color: #222222;
+    background-color: #219EBC;
 }
 
 #back{
-    background-color: #E1E6AC;
+    background-color:#2E3233;
     cursor: grab;
     position: absolute;
-    /* margin-right: 50vw;
-    margin-bottom: 50vw;*/
+    margin-top: 2vw;
+    margin-left: 2vw;
+   
 } 
+
+.controls{
+    visibility: hidden;
+}
+.keys{
+    background-color: #b9e6f1;
+    border-radius: 20%;
+    padding: 0.6vw;
+    visibility:hidden;
+ 
+}
+
 
 h1{
     text-align: center;
@@ -40,8 +56,9 @@ h1{
     font-size: 6vw;
     color: white;
 }
-.score{
-    margin-top: -30VW;
+#scoreboard{
+    
+    font-size: 3vw;
 }
 
 #tetris{
@@ -61,34 +78,77 @@ h1{
 } */
 
 @media only screen and (max-width: 768px) {
+    
+
+    .score {
+        margin-top: -80vw;
+        margin-right: 20vw;
+    
+    }
+
     .row {
-        height:auto;
-        overflow-y: hidden;
-    }
-
-    .column1,
-    .column2 {
-        height: auto;
-    }
-
-    h1 {
-        font-size: 4vw;
-        margin: 5vw 0;
-    }
-
-    .score
-    {
-        margin-top: 25vw;
-        margin-right: 12vw;
-    }
-
-    .row{
         display: grid;
-        grid-template-columns: 50vw 50vw;
+        grid-template-columns: 1fr  ;
         width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        position: absolute;
+        height: auto;
+        z-index: -2;
+        position: relative;
+    }
+    .column2{
+        margin-top: -0.1vw;
+        height: 35vw;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+    } 
+    .column1{
+        margin-top: 30vw;
+        overflow: hidden;
+        position: fixed;
+        height: 90vh;
+        width: 100%;
+        
+    }
+    #back{
+        background-color:#219EBC;
+    }
+   
+    #hi{
+        margin-top: 20vw;
+    }
+    .keys{
+        visibility: visible;
+    }
+    .controls{
+        position: fixed;
+        z-index: 1;
+        margin-top: 110vw;
+        
+    }
+    .vertical{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        row-gap: 1vw;
+        column-gap: 2vw;
+        margin-left: -12vw;
+        margin-top: -127vw;
+       
     }
     
-}
+    .horizontal{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20vw;
+        margin-top: 4vw;
+        margin-left:-4vw;
+        
+    }
+    
+    
+    }
+    

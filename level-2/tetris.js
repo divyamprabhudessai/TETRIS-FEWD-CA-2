@@ -2,6 +2,8 @@ const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 const back = document.getElementById('back')
 
+
+
 context.scale(20, 20);
 
 function arenaSweep() {
@@ -169,19 +171,23 @@ function playerReset() {
     player.pos.x = (arena[0].length / 2 | 0) -
                    (player.matrix[0].length / 2 | 0);
 
+    var sound = document.getElementById("game-over")
+
       //game over condition              
-    if (collide(arena, player)) {   
-        window.location.href = "../score/score.html"
-        // arena.forEach(row => row.fill(0));
-        // location.href = "score.html?score=" + player.score;
-
-        localStorage.setItem("scoreValue",player.score)
-        console.log(localStorage)
-
-
-        player.score = 0;
-        updateScore();
-    }
+    
+        if (collide(arena, player)) {   
+            window.location.href = "../score/score.html"
+            // arena.forEach(row => row.fill(0));
+            // location.href = "score.html?score=" + player.score;
+    
+            localStorage.setItem("scoreValue",player.score)
+            console.log(localStorage)
+    
+    
+            player.score = 0;
+            updateScore();
+        }
+   
 }
 
 function playerRotate(dir) {
@@ -219,23 +225,57 @@ function update(time = 0) {
     requestAnimationFrame(update);
 }
 
-
+var getname = localStorage.getItem("n")
 
 function updateScore() {
-    document.getElementById('scoreboard').innerText ="SCORE:"+ player.score;
+    document.getElementById('scoreboard').innerHTML = "<span id=hi> Hey "+getname+ " <br>  Welcome to Tetris " + "<br> <br> <u>Your socre is: "+ player.score +"</span";
     
 }
 
+const move1 = document.getElementById("rotate")
+const move2 = document.getElementById("down")
+const move3 = document.getElementById("left")
+const move4 = document.getElementById("right")
+
+move1.onclick =  function(){
+    console.log("veu2")
+    playerRotate(1)
+}
+
+move2.onclick =  function(){
+    console.log("veu2")
+    playerDrop()
+}
+move3.onclick =  function(){
+    console.log("veu2")
+    playerMove(-1)
+}
+
+move4.onclick =  function(){
+    console.log("veu2")
+    playerMove(1)
+}
+
 document.addEventListener('keydown', event => {
-    if (event.keyCode === 37) {
+    // left
+    if (event.keyCode === 37 ) {
         playerMove(-1);
-    } else if (event.keyCode === 39) {
+    }
+    // right
+     else if (event.keyCode === 39) {
         playerMove(1);
-    } else if (event.keyCode === 40) {
+        
+    } 
+    // down
+    else if (event.keyCode === 40) {
         playerDrop();
-    } else if (event.keyCode === 81) {
+    }
+    // clockwise (up arrow)
+     else if (event.keyCode === 38) {
         playerRotate(-1);
-    } else if (event.keyCode === 87) {
+    }
+    // anticlockwise ("W")
+     else if (event.keyCode === 87) {
         playerRotate(1);
     }
 });
@@ -252,7 +292,7 @@ const colors = [
 ];
 
 const arena = createMatrix(
-    15, 20);
+    20, 22);
 
 const player = {
     pos: {x: 5, y: 5},

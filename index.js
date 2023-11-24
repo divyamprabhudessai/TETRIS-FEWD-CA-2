@@ -89,7 +89,3 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(totalTime)
     });
 });
-
-
-
-

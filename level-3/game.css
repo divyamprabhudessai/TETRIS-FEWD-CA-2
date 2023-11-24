@@ -12,13 +12,17 @@
     height: 100vh;
     z-index: -1;
     position: absolute;
+    overflow: hidden;
 }
 
+
+
 .column1{
-        background-color: rgb(50, 47, 47);
+        background-color:#2E3233;
         display: flex;
         justify-content: center;
         align-items: center;
+       
 }
 
 .column2{
@@ -26,9 +30,25 @@
 }
 
 #back{
-    background-color: #219EBC;
+    background-color:#2E3233;
     cursor: grab;
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 2vw;
+   
+} 
+
+.controls{
+    visibility: hidden;
 }
+.keys{
+    background-color: #b9e6f1;
+    border-radius: 20%;
+    padding: 0.6vw;
+    visibility:hidden;
+ 
+}
+
 
 h1{
     text-align: center;
@@ -36,15 +56,99 @@ h1{
     font-size: 6vw;
     color: white;
 }
-/* 
-#game-canvas{
-
-    margin-top: -120vw;
-    margin-left: 20vw;
-    background-color: black;
+#scoreboard{
     
+    font-size: 3vw;
+}
+
+#tetris{
+    align-self: center;
+}
+
+/* .CONTROLS{
+ display: flex;
+ flex-direction: row;
+ column-gap: 3vw;
+ margin-top: 40vw;
+ margin-right: 40vw;
 } */
 
-#teris{
- margin-top: 10vw;
-}
+/* .canvas{
+    margin-left: 30vw;
+} */
+
+@media only screen and (max-width: 768px) {
+    
+
+    .score {
+        margin-top: -80vw;
+        margin-right: 20vw;
+    
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr  ;
+        width: 100vw;
+        height: auto;
+        z-index: -2;
+        position: relative;
+    }
+    .column2{
+        margin-top: -0.1vw;
+        height: 35vw;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+    } 
+    .column1{
+        margin-top: 30vw;
+        overflow: hidden;
+        position: fixed;
+        height: 90vh;
+        width: 100%;
+        
+    }
+    #back{
+        background-color:#219EBC;
+    }
+   
+    #hi{
+        margin-top: 20vw;
+    }
+    .keys{
+        visibility: visible;
+    }
+    .controls{
+        position: fixed;
+        z-index: 1;
+        margin-top: 110vw;
+        
+    }
+    .vertical{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        row-gap: 1vw;
+        column-gap: 2vw;
+        margin-left: -12vw;
+        margin-top: -127vw;
+       
+    }
+    
+    .horizontal{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20vw;
+        margin-top: 4vw;
+        margin-left:-4vw;
+        
+    }
+    
+    
+    }
+    

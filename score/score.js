@@ -1,4 +1,7 @@
-
+// array to store random winning phrases
+const statements = ["Good work champ!", "You are phenomenal!", "The sun is shining!"];
+const randomStatement = statements[Math.floor(Math.random() * statements.length)];
+console.log(randomStatement); 
 
 var score = localStorage.getItem("scoreValue");
 
@@ -7,19 +10,19 @@ var scoreboard = document.getElementById("scoreboard");
 var numscore = parseInt(score);
 
 if(numscore==0){
-    scoreboard.innerHTML = score  +  "<br>Noob!";
+    scoreboard.innerHTML = score  +  "<br>Tough luck!";
 }
 
 if(numscore>0 && numscore<50){
-    scoreboard.innerHTML = score  +  "<br>Amateur!";
+    scoreboard.innerHTML = score  +  "<br>Amateur!" + "<br>" +  randomStatement;;
 }
 
 if(numscore>50 && numscore<100){
-    scoreboard.innerHTML = score  +  "<br>Pro!";
+    scoreboard.innerHTML = score  +  "<br>Pro!" + "<br>" +  randomStatement;
 }
 
 if(numscore>100){
-    scoreboard.innerHTML = score  +  "<br>Legendary!";
+    scoreboard.innerHTML = score  +  "<br>Legendary!" + "<br>" +  randomStatement;
 }
 
 

@@ -1,33 +1,11 @@
-// AUDIO
-const openingAudio = new Audio("../audio/mainpage audio.mp3")
-
-window.onload = function(){
-    openingAudio.pause()
-    openingAudio.currentTime = 0;
-    openingAudio.loop=true;
-    openingAudio.play()
-}
-
-
-// mute functionality
-const audio = document.querySelector(".mute")
-
-let sound = localStorage.getItem("sound")
-console.log(sound)
-
-audio.onclick = function(){
-    if(sound)
-    {
-        audio.src = "../audio/mainpage audio.mp3"
-        localStorage.setItem("sound",false)
-        sound = false
-        openingAudio.pause()
+var getname = localStorage.getItem("n")
+var getnick = localStorage.getItem("nick")
+const start = document.getElementById("startgame")
+if(getname!= null|| getnick!= null ){
+    start.onclick = function(){
+        window.location.href = "../levels/levels.html"
     }
-    else{
-        audio.src = "../Images/Audio.png"
-        localStorage.setItem("sound",true)
-        sound = true
-        openingAudio.currentTime = 0
-        openingAudio.play()
-    }
+}
+else {
+    alert("please enter your details on the previous page:)")
 }
