@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Irish Grover';
+}
+.row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.column1{
+        background-color: rgb(50, 47, 47);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.column2{
+    background-color: #219EBC;
+}
+
+#back{
+    background-color: #219EBC;
+    cursor: grab;
+}
+
+h1{
+    text-align: center;
+    margin-top: 17vw;
+    font-size: 6vw;
+    color: white;
+}
+.score{
+    margin-top: -30VW;
+}
+
+/* .CONTROLS{
+ display: flex;
+ flex-direction: row;
+ column-gap: 3vw;
+ margin-top: 40vw;
+ margin-right: 40vw;
+} */
+
+/* .canvas{
+    margin-left: 30vw;
+} */
+
+@media only screen and (max-width: 768px) {
+    .row {
+        height:auto;
+        overflow-y: hidden;
+    }
+
+    .column1,
+    .column2 {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+        margin: 5vw 0;
+    }
+
+    .score
+    {
+        margin-top: 25vw;
+        margin-right: 12vw;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        position: absolute;
+    }
+    
+}

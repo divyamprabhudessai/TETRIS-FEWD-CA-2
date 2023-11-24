@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    font-family: "Irish Grover";
+    background-color: #F05D5D;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 5vw;
+    color: white;
+}
+
+.replay{
+    margin-left: 47vw;
+   cursor: grab;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        margin-top: 50vw; 
+        font-size: 10vw; 
+    }
+
+    .replay {
+        margin-left: 43%; 
+        width: 18vw;
+        margin-top: 20vw; 
+    }
+
+    
+}

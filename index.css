@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+
+
+*{
+    background-image: url("./images/BGIMG.jpg");
+    /* background-color: #8ecae6; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Irish Grover";
+
+    
+
+}
+    
+
+   
+.logo{
+    text-align: center;
+}
+.mute{
+    margin-left: 93vw;
+    margin-top: -15vh;
+    border: none;
+    cursor: grab;
+}
+
+.name{
+    width: 10vw;
+}
+.homcont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14vh;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+input{
+   background-color: black;
+   width: 15vw;
+   height: 5vh;
+   margin-left: -3.7vw;
+   color: white;
+   font-size: 1.5vw;
+   text-align: center;
+}
+#instructions{
+    margin-right: 2vw;
+}
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+.game{
+    cursor: grab;
+    border: none;
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .mute {
+        margin-left: 80vw; 
+        margin-top: 0; 
+    }
+
+    .name {
+        width: 100%; 
+    }
+
+    .homcont {
+        row-gap: 7vh;
+    }
+
+    input {
+        margin-left: -8vw;
+        width: 120%;
+        font-size: 6vw; 
+    }
+
+    *{
+        background-size:5000px;
+    }
+}
