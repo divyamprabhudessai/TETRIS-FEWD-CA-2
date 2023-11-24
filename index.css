@@ -3,8 +3,9 @@
 
 
 *{
-    background-image: url("./images/BGIMG.jpg");
-    /* background-color: #8ecae6; */
+    /* background-image: url("./images/BGIMG.jpg");
+    background-color: #8ecae6; */
+    background-color: #219EBC;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Irish Grover";
@@ -25,15 +26,18 @@
     cursor: grab;
 }
 
+
+
 .name{
     width: 10vw;
 }
 .homcont{
     display: flex;
     flex-direction: column;
-    row-gap: 14vh;
+    row-gap: 10vh;
     align-items: center;
     margin-top: 4vw;
+    
 }
 
 input{
@@ -69,7 +73,8 @@ input{
     }
 
     .name {
-        width: 100%; 
+        width: 100%;
+         
     }
 
     .homcont {
@@ -81,8 +86,11 @@ input{
         width: 120%;
         font-size: 6vw; 
     }
+    body{
+        overflow: hidden;
+    }
 
     *{
-        background-size:5000px;
+        background-size:100%;
     }
 }

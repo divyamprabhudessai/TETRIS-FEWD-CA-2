@@ -11,7 +11,11 @@ function submit() {
     };
 
     // storing user data
-    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+    localStorage.setItem("n",userDetails.username);
+    
+    localStorage.setItem("nick",userDetails.username);
+
+    // localStorage.setItem("username", JSON.stringify(userDetails);
 
 
 

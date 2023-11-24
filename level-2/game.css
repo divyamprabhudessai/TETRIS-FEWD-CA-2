@@ -12,23 +12,27 @@
     height: 100vh;
     z-index: -1;
     position: absolute;
+    overflow: hidden;
 }
 
 .column1{
-        background-color: rgb(50, 47, 47);
+        background-color:#E1E6AC;
         display: flex;
         justify-content: center;
         align-items: center;
 }
 
 .column2{
-    background-color: #219EBC;
+    background-color: #222222;
 }
 
 #back{
-    background-color: #219EBC;
+    background-color: #E1E6AC;
     cursor: grab;
-}
+    position: absolute;
+    /* margin-right: 50vw;
+    margin-bottom: 50vw;*/
+} 
 
 h1{
     text-align: center;
@@ -36,15 +40,55 @@ h1{
     font-size: 6vw;
     color: white;
 }
-/* 
-#game-canvas{
+.score{
+    margin-top: -30VW;
+}
 
-    margin-top: -120vw;
-    margin-left: 20vw;
-    background-color: black;
-    
+#tetris{
+    align-self: center;
+}
+
+/* .CONTROLS{
+ display: flex;
+ flex-direction: row;
+ column-gap: 3vw;
+ margin-top: 40vw;
+ margin-right: 40vw;
 } */
 
-#teris{
- margin-top: 10vw;
+/* .canvas{
+    margin-left: 30vw;
+} */
+
+@media only screen and (max-width: 768px) {
+    .row {
+        height:auto;
+        overflow-y: hidden;
+    }
+
+    .column1,
+    .column2 {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+        margin: 5vw 0;
+    }
+
+    .score
+    {
+        margin-top: 25vw;
+        margin-right: 12vw;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        position: absolute;
+    }
+    
 }
