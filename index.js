@@ -101,20 +101,4 @@ audio.onclick = function(){
     }
 }
 
-// audio continuity
-document.addEventListener("DOMContentLoaded", () => {
-    const start = new Date().getTime();
-    window.addEventListener("beforeunload", () => {
-        var end = new Date().getTime();
-        var totalTime = (end - start) / 1000
 
-        totalTime += time
-
-        totalTime = JSON.stringify(totalTime); 
-
-        localStorage.removeItem('timeSpent')
-        localStorage.setItem('timeSpent', totalTime);
-
-        console.log(totalTime)
-    });
-});
