@@ -14,9 +14,11 @@ Objective: The goal of Tetris is to score points by clearing lines of blocks. As
 -> Drop: Use the down arrow key to make the block drop.
 
 **SCORE:**
+
 On clearing a single line 10 points will be incremented to your score.
 
 **GAME OVER:**
+
 The game ends when the blocks stack up to the top of the screen, and there's no more room for new blocks to fall. The game over screen will then appear, displaying your score
 
 # DEPLOYED LINK: 
