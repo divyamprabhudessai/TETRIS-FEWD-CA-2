@@ -1,6 +1,8 @@
 ﻿# TETRIS-FEWD-CA-2
 Tetris is a classic puzzle game that involves arranging falling blocks into complete lines to clear them. Here are the basic instructions for playing Tetris:
 
+#HOW TO PLAY
+
 Objective: The goal of Tetris is to score points by clearing lines of blocks. As the blocks fall from the top of the screen, your objective is to arrange them in a way that they form complete horizontal lines.
 
 CONTROLS:
@@ -17,11 +19,11 @@ On clearing a single line 10 points will be incremented to your score.
 GAME OVER:
 The game ends when the blocks stack up to the top of the screen, and there's no more room for new blocks to fall. The game over screen will then appear, displaying your score
 
-DEPLOYED LINK: https://6562501625d30a67c22960ff--serene-crisp-841ea1.netlify.app/
+#DEPLOYED LINK: https://6562501625d30a67c22960ff--serene-crisp-841ea1.netlify.app/
 
-VIDEO EXPLANATION : https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
+#VIDEO EXPLANATION: https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 
-PAGES:
+#PAGES:
 
 1-> MAIN PAGE:
 
@@ -87,7 +89,7 @@ PAGES:
 ![result](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/504aacb4-9fb9-49f7-ae2d-30d86d0dd93e)
 
 
-BIBLIOGRAPHY
+#BIBLIOGRAPHY
 
 -> icons: https://www.flaticon.com/
 
