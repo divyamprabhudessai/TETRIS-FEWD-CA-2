@@ -1,5 +1,6 @@
 ﻿# TETRIS-FEWD-CA-2
 Tetris is a classic puzzle game that involves arranging falling blocks into complete lines to clear them. Here are the basic instructions for playing Tetris:
+
 Objective: The goal of Tetris is to score points by clearing lines of blocks. As the blocks fall from the top of the screen, your objective is to arrange them in a way that they form complete horizontal lines.
 
 CONTROLS:
@@ -18,9 +19,14 @@ The game ends when the blocks stack up to the top of the screen, and there's no 
 
 DEPLOYED LINK:
 
-SCREENSHOTS:
+PAGES:
+1-> MAIN PAGE:
+      -> The main page contains input boxes for the user to enter their name and user name.
+      ->It also contains 2 buttons "instructions" and "levels" on clicking which the player will be redirected to the respective pages.
+      -> It also has a mute-unmute button which on  clicking allows the user to mute and unmute the music.
+      ![tetris mainpage](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/e5c72e73-ce58-430b-9cdf-ff8fb1014fab)
 
-![back](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/a3e61ec4-f396-4545-8792-1952ad433561)
+      
 
 
 
