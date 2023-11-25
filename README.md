@@ -22,7 +22,10 @@ SCREENSHOTS:
 BIBLIOGRAPHY
 
 -> icons: https://www.flaticon.com/
+
 -> buttons: designed on Figma.
+
 -> colours: https://coolors.co/
+
 -> JS references: https://www.w3schools.com/  and  https://developer.mozilla.org/en-US/
 
