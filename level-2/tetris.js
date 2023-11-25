@@ -2,11 +2,21 @@ const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 const back = document.getElementById('back')
 
+// Game arena matrix initialization
+const arena = createMatrix(
+    20, 22);
+
+// Player object containing position, matrix, and score
+const player = {
+    pos: {x: 5, y: 5},
+    matrix: null,
+    score: 0,
+};
 
 
 context.scale(20, 20);
 
-// clearing completed rows from bottom
+// Function to clear completed rows in the game arena and update the player score
 function arenaSweep() {
     let rowCount = 1;
     outer: for (let y = arena.length -1; y > 0; --y) {
@@ -25,6 +35,7 @@ function arenaSweep() {
     }
 }
 
+// Function to check if the player's piece collides with the game arena
 function collide(arena, player) {
     const m = player.matrix;
     const o = player.pos;
@@ -40,6 +51,7 @@ function collide(arena, player) {
     return false;
 }
 
+// Function to create a 2D array filled with zeros
 function createMatrix(w, h) {
     const matrix = [];
     while (h--) {
@@ -48,6 +60,7 @@ function createMatrix(w, h) {
     return matrix;
 }
 
+// Function to create a matrix representing a Tetris piece based on the provided type
 function createPiece(type)
 {
     if (type === 'I') {
@@ -95,6 +108,7 @@ function createPiece(type)
     }
 }
 
+//Function to draw a matrix on the canvas with a specified offset
 function drawMatrix(matrix, offset) {
     matrix.forEach((row, y) => {
         row.forEach((value, x) => {
@@ -108,6 +122,7 @@ function drawMatrix(matrix, offset) {
     });
 }
 
+// Function to draw the game on the canvas
 function draw() {
     context.fillStyle = '#000';
     context.fillRect(0, 0, canvas.width, canvas.height);
@@ -116,6 +131,7 @@ function draw() {
     drawMatrix(player.matrix, player.pos);
 }
 
+// Function to merge the player's piece into the game arena
 function merge(arena, player) {
     player.matrix.forEach((row, y) => {
         row.forEach((value, x) => {
@@ -126,6 +142,7 @@ function merge(arena, player) {
     });
 }
 
+// Function to rotate a matrix in either clockwise or anticlockwise direction
 function rotate(matrix, dir) {
     for (let y = 0; y < matrix.length; ++y) {
         for (let x = 0; x < y; ++x) {
@@ -146,6 +163,7 @@ function rotate(matrix, dir) {
     }
 }
 
+// Function to handle the player dropping the piece down
 function playerDrop() {
     player.pos.y++;
     if (collide(arena, player)) {
@@ -158,6 +176,7 @@ function playerDrop() {
     dropCounter = 0;
 }
 
+// Function to handle the player moving left or right
 function playerMove(offset) {
     player.pos.x += offset;
     if (collide(arena, player)) {
@@ -165,6 +184,7 @@ function playerMove(offset) {
     }
 }
 
+// Function to reset the player's position and matrix, check for game-over, and update the score
 function playerReset() {
     const pieces = 'TJLOSZI';
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
@@ -178,8 +198,7 @@ function playerReset() {
     
         if (collide(arena, player)) {   
             window.location.href = "../score/score.html"
-            // arena.forEach(row => row.fill(0));
-            // location.href = "score.html?score=" + player.score;
+            
     
             localStorage.setItem("scoreValue",player.score)
             console.log(localStorage)
@@ -191,6 +210,7 @@ function playerReset() {
    
 }
 
+// Function to handle the player rotating the piece
 function playerRotate(dir) {
     const pos = player.pos.x;
     let offset = 1;
@@ -208,10 +228,11 @@ function playerRotate(dir) {
 
 let dropCounter = 0;
 
-let dropInterval = 300;
-
+let dropInterval = 600;
 
 let lastTime = 0;
+
+// Update function for the game loop
 function update(time = 0) {
     const deltaTime = time - lastTime;
 
@@ -226,17 +247,21 @@ function update(time = 0) {
     requestAnimationFrame(update);
 }
 
+// Retrieve the player's name from local storage
 var getname = localStorage.getItem("n")
 
+// Function to update the displayed score on the scoreboard
 function updateScore() {
     document.getElementById('scoreboard').innerHTML = "<span id=hi> Hey "+getname+ " <br>  Welcome to Tetris " + "<br> <br> <u>Your socre is: "+ player.score +"</span";
     
 }
 
+// Event handling for button clicks on mobile version(e.g., rotation, movement)
 const move1 = document.getElementById("rotate")
 const move2 = document.getElementById("down")
 const move3 = document.getElementById("left")
 const move4 = document.getElementById("right")
+
 
 move1.onclick =  function(){
     console.log("veu2")
@@ -257,6 +282,7 @@ move4.onclick =  function(){
     playerMove(1)
 }
 
+// Event listener for keyboard input (desktop/laptop version)
 document.addEventListener('keydown', event => {
     // left
     if (event.keyCode === 37 ) {
@@ -281,6 +307,7 @@ document.addEventListener('keydown', event => {
     }
 });
 
+// Color palette for Tetris pieces
 const colors = [
     null,
     '#FF0D72',
@@ -292,15 +319,8 @@ const colors = [
     '#3877FF',
 ];
 
-const arena = createMatrix(
-    20, 22);
 
-const player = {
-    pos: {x: 5, y: 5},
-    matrix: null,
-    score: 0,
-};
-
+// Function to reset player state, update the score, and start the game loop
 playerReset();
 updateScore();
 update();
@@ -308,6 +328,7 @@ update();
 
 
 // AUDIO
+// Initialize and play the opening audio on window load
 const openingAudio = new Audio("../audio/mainpage audio.mp3")
 
 window.onload = function(){

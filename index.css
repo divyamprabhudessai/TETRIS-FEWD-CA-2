@@ -67,8 +67,9 @@ input{
 
 @media screen and (max-width: 900px) {
     .mute {
-        margin-left: 80vw; 
-        margin-top: 0; 
+        margin-left: 86vw; 
+        margin-top: 2vw; 
+        width: 8vw;
     }
 
     .name {
@@ -78,6 +79,7 @@ input{
 
     .homcont {
         row-gap: 7vh;
+        margin-top: 12vw;
     }
 
     input {
@@ -92,4 +94,6 @@ input{
     *{
         background-size:100%;
     }
+
+    
 }

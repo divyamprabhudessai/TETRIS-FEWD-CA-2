@@ -28,13 +28,16 @@ h1{
 
 .mute{
     margin-left: 93vw;
+    margin-top: 2vw;
+    cursor: grab;
     
 }
 
 .back{
-    margin-top: -1.6vw;
+    margin-top: -3vw;
     width: 3.5vw;
     height: 3.4vw;
+    cursor: grab;
 }
 
 
@@ -56,12 +59,12 @@ h1{
 
     .mute {
         margin-left: 85vw; 
-        margin-top: 2vw; 
+        margin-top: 8vw; 
     }
 
     .back {
         width: 8vw; 
         height: 7vw; 
-        margin-top: -3vw; 
+        margin-top: -9vw; 
     }
 }
