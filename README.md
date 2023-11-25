@@ -97,14 +97,14 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 
 # BIBLIOGRAPHY
 
--> icons: https://www.flaticon.com/
+**Icons:** https://www.flaticon.com/
 
--> Desktop Prototype: https://www.figma.com/proto/mhKMt3MQY9d0VdRCMEab1q/Untitled?page-id=0%3A1&type=design&node-id=23-18&viewport=230%2C801%2C0.25&t=WdfF4ZicZ0uwTrj6-1&scaling=min-zoom&starting-point-node-id=23%3A18&mode=design
+**Prototype:** https://www.figma.com/proto/mhKMt3MQY9d0VdRCMEab1q/Untitled?page-id=0%3A1&type=design&node-id=23-18&viewport=230%2C801%2C0.25&t=WdfF4ZicZ0uwTrj6-1&scaling=min-zoom&starting-point-node-id=23%3A18&mode=design
 
--> Design Elements: https://www.figma.com/file/mhKMt3MQY9d0VdRCMEab1q/Tetris?type=design&node-id=0%3A1&mode=design&t=14poRbmLWAtVDsBV-1
+**Design Elements:** https://www.figma.com/file/mhKMt3MQY9d0VdRCMEab1q/Tetris?type=design&node-id=0%3A1&mode=design&t=14poRbmLWAtVDsBV-1
 
--> Colours: https://coolors.co/
+**Colours:** https://coolors.co/
 
--> JS references: https://www.w3schools.com/  and  https://developer.mozilla.org/en-US/
+ **Technical references:** https://www.w3schools.com/  and  https://developer.mozilla.org/en-US/
 
--> Audio: https://archive.org/details/TetrisThemeMusic  and https://pixabay.com/sound-effects/search/game-over/
+**Audio:** https://archive.org/details/TetrisThemeMusic  and https://pixabay.com/sound-effects/search/game-over/
