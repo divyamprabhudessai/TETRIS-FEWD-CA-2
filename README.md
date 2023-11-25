@@ -20,6 +20,10 @@ DEPLOYED LINK:
 
 SCREENSHOTS:
 
+![back](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/a3e61ec4-f396-4545-8792-1952ad433561)
+
+
+
 BIBLIOGRAPHY
 
 -> icons: https://www.flaticon.com/
