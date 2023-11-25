@@ -5,7 +5,7 @@ Tetris is a classic puzzle game that involves arranging falling blocks into comp
 
 Objective: The goal of Tetris is to score points by clearing lines of blocks. As the blocks fall from the top of the screen, your objective is to arrange them in a way that they form complete horizontal lines.
 
-CONTROLS:
+**CONTROLS:**
 
 -> Move Left/Right: Use the left and right arrow keys to move the falling block left or right on the screen.
       
@@ -13,10 +13,10 @@ CONTROLS:
         
 -> Drop: Use the down arrow key to make the block drop.
 
-SCORE:
+**SCORE:**
 On clearing a single line 10 points will be incremented to your score.
 
-GAME OVER:
+**GAME OVER:**
 The game ends when the blocks stack up to the top of the screen, and there's no more room for new blocks to fall. The game over screen will then appear, displaying your score
 
 # DEPLOYED LINK: 
@@ -29,7 +29,7 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 
 # PAGES:
 
-1) MAIN PAGE:
+**1) MAIN PAGE:**
 
 -> Technology stack used: Vanilla HTML, CSS, and JS
 
@@ -41,7 +41,7 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
       
 ![tetris mainpage](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/e5c72e73-ce58-430b-9cdf-ff8fb1014fab)
 
-2) INSTRUCTIONS PAGE:
+**2) INSTRUCTIONS PAGE:**
 
 -> Technology stack used: Vanilla HTML, and CSS.
 
@@ -53,7 +53,7 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
       
 ![instrusction page ss](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/c0b54671-b2d6-4e98-bef2-43a418b1e8b8)
 
-3) LEVELS PAGE:
+**3) LEVELS PAGE:**
 
 -> Technology stack used: Vanilla HTML, CSS, and JS.
 
@@ -65,7 +65,7 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 
 ![levels](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/a08455dd-2d26-47eb-bde2-ee5cba140cc3)
 
-4) GAME PAGE :
+**4) GAME PAGE :**
 
 -> Technology stack used: Vanilla HTML, CSS, and JS.
 
@@ -82,7 +82,7 @@ https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 ![Screenshot 2023-11-26 025255](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/cdfa4cbf-b713-44de-bfd3-80565d1f8536)
 
 
-5) RESULT PAGE :
+**5) RESULT PAGE :**
 
 -> Technology stack used: Vanilla HTML, CSS, and JS.
 
