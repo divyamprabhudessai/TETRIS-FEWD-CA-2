@@ -1,5 +1,5 @@
 ﻿# TETRIS-FEWD-CA-2
-Tetris is a classic puzzle game that involves arranging falling blocks into complete lines to clear them. Here are the basic instructions for playing Tetris:
+Tetris is a fun single-player game that involves arranging falling blocks into complete lines to clear them. Here are the basic instructions for playing Tetris:
 
 # HOW TO PLAY
 
