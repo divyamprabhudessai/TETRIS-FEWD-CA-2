@@ -208,7 +208,7 @@ function playerRotate(dir) {
 
 let dropCounter = 0;
 
-let dropInterval = 300;
+let dropInterval = 280;
 
 
 let lastTime = 0;
