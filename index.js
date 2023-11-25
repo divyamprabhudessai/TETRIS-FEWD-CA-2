@@ -28,6 +28,35 @@ function submit() {
     }
     
 };
+function save() {
+
+   
+    
+    var username = document.getElementById("username").value;
+    var nickname = document.getElementById("nname").value;
+
+    var userDetails = {
+        username: username,
+        nickname: nickname
+    };
+
+    // storing user data
+    localStorage.setItem("n",userDetails.username);
+    
+    localStorage.setItem("nick",userDetails.username);
+
+    // localStorage.setItem("username", JSON.stringify(userDetails);
+
+
+
+    // condition to proceed
+    if(username==""||nickname==""){
+        alert("please enter your details to proceed:)");
+    }
+    else{
+        window.location.href= "../instructions/instruction.html"
+    }
+}
 
 // mute button
 const mute = document.getElementById("mute");

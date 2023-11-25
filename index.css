@@ -22,7 +22,6 @@
 .mute{
     margin-left: 93vw;
     margin-top: -15vh;
-    border: none;
     cursor: grab;
 }
 
@@ -66,7 +65,7 @@ input{
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     .mute {
         margin-left: 80vw; 
         margin-top: 0; 

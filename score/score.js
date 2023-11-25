@@ -1,5 +1,5 @@
 // array to store random winning phrases
-const statements = ["Good work champ!", "You are phenomenal!", "The sun is shining!"];
+const statements = ["Good work champ!", "You are phenomenal!", ];
 const randomStatement = statements[Math.floor(Math.random() * statements.length)];
 console.log(randomStatement); 
 

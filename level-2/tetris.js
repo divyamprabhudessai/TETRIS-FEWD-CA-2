@@ -6,6 +6,7 @@ const back = document.getElementById('back')
 
 context.scale(20, 20);
 
+// clearing completed rows from bottom
 function arenaSweep() {
     let rowCount = 1;
     outer: for (let y = arena.length -1; y > 0; --y) {
