@@ -228,12 +228,7 @@ function playerRotate(dir) {
 
 let dropCounter = 0;
 
-<<<<<<< HEAD
-let dropInterval = 600;
-=======
 let dropInterval = 90;
-
->>>>>>> origin/master
 
 let lastTime = 0;
 

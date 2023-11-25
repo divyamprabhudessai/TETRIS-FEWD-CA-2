@@ -3,12 +3,14 @@ const statements = ["Good work champ!", "You are phenomenal!", ];
 const randomStatement = statements[Math.floor(Math.random() * statements.length)];
 console.log(randomStatement); 
 
+// reteriving player score
 var score = localStorage.getItem("scoreValue");
 
 var scoreboard = document.getElementById("scoreboard");
 
 var numscore = parseInt(score);
 
+// statements for different scores
 if(numscore==0){
     scoreboard.innerHTML = score  +  "<br>Tough luck!";
 }
@@ -26,7 +28,7 @@ if(numscore>100){
 }
 
 
-// AUDIO
+// Audio for gameover
 const endAudio = new Audio("../audio/game over.mp3")
 
 window.onload = function(){

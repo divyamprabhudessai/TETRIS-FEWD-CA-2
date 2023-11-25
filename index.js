@@ -1,3 +1,4 @@
+// function for levels
 function submit() {
 
    
@@ -13,9 +14,9 @@ function submit() {
     // storing user data
     localStorage.setItem("n",userDetails.username);
     
-    localStorage.setItem("nick",userDetails.username);
+    localStorage.setItem("nick",userDetails.nickname);
 
-    // localStorage.setItem("username", JSON.stringify(userDetails);
+    
 
 
 
@@ -28,6 +29,8 @@ function submit() {
     }
     
 };
+
+// function for instructions 
 function save() {
 
    
@@ -45,7 +48,7 @@ function save() {
     
     localStorage.setItem("nick",userDetails.username);
 
-    // localStorage.setItem("username", JSON.stringify(userDetails);
+    
 
 
 
@@ -63,6 +66,8 @@ const mute = document.getElementById("mute");
 const unmute = document.getElementById("unmutemute");
 // AUDIO
 const openingAudio = new Audio("../audio/mainpage audio.mp3")
+
+    
 
 
 
