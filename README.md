@@ -3,6 +3,7 @@ Tetris is a classic puzzle game that involves arranging falling blocks into comp
 Objective: The goal of Tetris is to score points by clearing lines of blocks. As the blocks fall from the top of the screen, your objective is to arrange them in a way that they form complete horizontal lines.
 
 CONTROLS:
+
 -> Move Left/Right: Use the left and right arrow keys to move the falling block left or right on the screen.
       
 -> Rotate Block: Use the "W" or up arrow key to rotate the falling block. This allows you to fit the blocks together more efficiently.
