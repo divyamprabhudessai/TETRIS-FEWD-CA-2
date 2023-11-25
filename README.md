@@ -19,9 +19,13 @@ On clearing a single line 10 points will be incremented to your score.
 GAME OVER:
 The game ends when the blocks stack up to the top of the screen, and there's no more room for new blocks to fall. The game over screen will then appear, displaying your score
 
-# DEPLOYED LINK: https://6562501625d30a67c22960ff--serene-crisp-841ea1.netlify.app/
+# DEPLOYED LINK: 
 
-# VIDEO EXPLANATION: https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
+https://6562501625d30a67c22960ff--serene-crisp-841ea1.netlify.app/
+
+# VIDEO EXPLANATION:
+
+https://drive.google.com/drive/folders/1aIJVblInqaJ0Jrgr6GIBBAeAygpWH5KN
 
 # PAGES:
 
