@@ -28,7 +28,7 @@ PAGES:
       
 -> It also has a mute-unmute button which on  clicking allows the user to mute and unmute the music.
       
-      ![tetris mainpage](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/e5c72e73-ce58-430b-9cdf-ff8fb1014fab)
+![tetris mainpage](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/e5c72e73-ce58-430b-9cdf-ff8fb1014fab)
 
       
 
