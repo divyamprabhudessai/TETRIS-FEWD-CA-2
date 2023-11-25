@@ -21,11 +21,12 @@ DEPLOYED LINK:
 
 PAGES:
 1-> MAIN PAGE:
-      -> The main page contains input boxes for the user to enter their name and user name.
+
+-> The main page contains input boxes for the user to enter their name and user name.
       
-      ->It also contains 2 buttons "instructions" and "levels" on clicking which the player will be redirected to the respective pages.
+->It also contains 2 buttons "instructions" and "levels" on clicking which the player will be redirected to the respective pages.
       
-      -> It also has a mute-unmute button which on  clicking allows the user to mute and unmute the music.
+-> It also has a mute-unmute button which on  clicking allows the user to mute and unmute the music.
       
       ![tetris mainpage](https://github.com/divyamprabhudessai/TETRIS-FEWD-CA-2/assets/144110931/e5c72e73-ce58-430b-9cdf-ff8fb1014fab)
 
